@@ -258,17 +258,17 @@ require('lazy').setup({
   {
     '2kabhishek/nerdy.nvim',
     dependencies = {
-        'folke/snacks.nvim',
+      'folke/snacks.nvim',
     },
     cmd = 'Nerdy',
     opts = {
-        max_recents = 30, -- Configure recent icons limit
-        copy_to_clipboard = false, -- Copy glyph to clipboard instead of inserting
-        copy_register = '+', -- Register to use for copying (if `copy_to_clipboard` is true)
+      max_recents = 30, -- Configure recent icons limit
+      copy_to_clipboard = false, -- Copy glyph to clipboard instead of inserting
+      copy_register = '+', -- Register to use for copying (if `copy_to_clipboard` is true)
     },
     keys = {
-        { '<leader>in', ':Nerdy list<CR>', desc = "Browse nerd icons" },
-        { '<leader>iN', ':Nerdy recents<CR>', desc = "Browse recent nerd icons" },
+      { '<leader>in', ':Nerdy list<CR>', desc = 'Browse nerd icons' },
+      { '<leader>iN', ':Nerdy recents<CR>', desc = 'Browse recent nerd icons' },
     },
   },
   -- Alternatively, use `config = function() ... end` for full control over the configuration.
@@ -956,7 +956,7 @@ require('lazy').setup({
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+    main = 'nvim-treesitter.config', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
