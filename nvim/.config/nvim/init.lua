@@ -89,6 +89,9 @@ P.S. You can delete this when you're done too. It's your config now! :)
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>ww', ':w!<CR>')
+vim.keymap.set('n', '<leader>wq', ':wq<CR>')
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
